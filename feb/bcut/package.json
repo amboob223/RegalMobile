@@ -1,0 +1,38 @@
+{
+  "name": "bcut",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-community/datetimepicker": "^7.6.2",
+    "@react-navigation/bottom-tabs": "^6.5.14",
+    "@react-navigation/native": "^6.1.12",
+    "@react-navigation/native-stack": "^6.9.20",
+    "@stripe/stripe-js": "^3.0.5",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.2",
+    "expo": "~50.0.7",
+    "expo-status-bar": "~1.11.1",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-datepicker": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "^5.0.1",
+    "stripe": "^14.16.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
