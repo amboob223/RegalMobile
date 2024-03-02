@@ -1,2 +1,7 @@
 to get the form to work 
     had to use ip for fetch request and after : use the port number for the server and 
+    eas submit --platform android 
+
+    -to publish we installed the g eas-cli and 
+    -eas build:configure
+    -npx eas update

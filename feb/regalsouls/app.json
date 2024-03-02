@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "regalsouls",
+    "name": "regal souls",
     "slug": "regalsouls",
+    "description": "This is a Booking App for majestic Gi's Tarot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +22,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.wocktan.regalsouls"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c0966565-b15d-4aa0-954b-d908c97f9321"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c0966565-b15d-4aa0-954b-d908c97f9321"
     }
   }
 }

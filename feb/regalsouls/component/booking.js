@@ -24,7 +24,7 @@ const BookingForm = () => {
                       target:target,
                     }
 
-        const response = await fetch("http://172.18.20.113:3000/souls",{
+        const response = await fetch("http://172.18.28.238:3000/souls",{
             method:"POST",
             headers:{"Content-type":"Application/json"},
             body:JSON.stringify(body)
