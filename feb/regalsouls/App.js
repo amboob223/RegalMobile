@@ -1,31 +1,34 @@
 import React from 'react';
-import { StyleSheet, View, Text,Image } from 'react-native';
-import Booking from "./component/booking";
-import Contacts from "./component/contacts";
+import { StyleSheet, View, Text, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import pic  from "./images/regalSouls.jpeg";
+import Booking from "./component/booking";
+import Contacts from "./component/contacts";
+import pic from "./images/regalSouls.jpeg";
+
 const Tab = createBottomTabNavigator();
 
 const Home = () => {
   return (
     <View style={styles.container}>
-<View style={{flexDirection:"row", justifyContent:"space-between",alignItems:"center"}}>
-   <Image source={pic} style={{width:50,height:50, margin:10}}/>
-      <Text style={styles.title}>Regal Souls</Text>
-</View>
-     
+      <View style={styles.header}>
+        <Image source={pic} style={styles.logo} />
+        <Text style={styles.title}>Regal Souls</Text>
+      </View>
       <Text style={styles.text}>
-        Welcome to Regal Souls, where everyone deserves to live their life with purpose and clarity. The mission is to provide you with the guidance to navigate life's challenges.
-      </Text>
-      <Text style={styles.text}>
-        Our resident tarot reader, Majeestic Gi, is highly skilled in the art of tarot and has helped countless individuals gain a deeper understanding of their life's path.
-      </Text>
-      <Text style={styles.text}>
-        With Regal Souls, you can book a reading and trust that you will receive the most accurate and insightful guidance available. Simply submit your request, and we will be in touch with you promptly to schedule your session with Majeestic Gi.
-      </Text>
-      <Text style={styles.text}>
-        Thank you
+        Welcome to Regal Souls, where purpose meets clarity. Our skilled tarot reader, Majeestic Gi, offers insightful guidance.
+        {'\n\n'}
+        <Text>
+          Book a session:
+          {'\n'}
+          <Text style={styles.woop}>
+            • 30 mins: $40 {'\n'}
+            • 1 hour: $80 {'\n'}
+            • 1.5 hours: $120
+          </Text>
+        </Text>
+        {'\n\n'}
+        Submit your request, and we'll promptly schedule your session. Thank you for choosing Regal Souls!
       </Text>
     </View>
   );
@@ -50,7 +53,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 15,
-    
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  logo: {
+    width: 50,
+    height: 50,
+    margin: 10,
   },
   title: {
     fontSize: 24,
@@ -61,6 +73,9 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     marginBottom: 10,
-    padding:10 
+    padding: 10,
+  },
+  woop: {
+    flexDirection: "row",
   },
 });
