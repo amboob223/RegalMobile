@@ -1,16 +1,20 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text,Image } from 'react-native';
 import Booking from "./component/booking";
 import Contacts from "./component/contacts";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import pic  from "./images/regalSouls.jpeg";
 const Tab = createBottomTabNavigator();
 
 const Home = () => {
   return (
     <View style={styles.container}>
+<View style={{flexDirection:"row", justifyContent:"space-between",alignItems:"center"}}>
+   <Image source={pic} style={{width:50,height:50, margin:10}}/>
       <Text style={styles.title}>Regal Souls</Text>
+</View>
+     
       <Text style={styles.text}>
         Welcome to Regal Souls, where everyone deserves to live their life with purpose and clarity. The mission is to provide you with the guidance to navigate life's challenges.
       </Text>

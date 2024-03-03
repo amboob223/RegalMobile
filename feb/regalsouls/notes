@@ -5,3 +5,12 @@ to get the form to work
     -to publish we installed the g eas-cli and 
     -eas build:configure
     -npx eas update
+
+    -work
+        -add image
+        -test on computer 
+        - functionaliyu on the barber
+        -for regal also make alrert for when the form submitted
+        -maybe we get the date picker later on for the shit 
+
+        exp://u.expo.dev/update/0a9732fc-92a1-405a-bf18-6194bedd2337 -- android device code 

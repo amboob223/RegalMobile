@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet,Image} from 'react-native';
 // import CheckBox from '@react-native-community/checkbox';
-
+import pic  from "../images/regalSouls.jpeg";
 
 const BookingForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -55,7 +55,10 @@ const BookingForm = () => {
 
   return (
     <View style={styles.container}>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+  <Image source={pic} style={{ width: 50, height: 50, marginRight: 10 }} />
       <Text style={styles.heading}>Make a Booking</Text>
+</View>
 <View>
       <TextInput
         style={styles.input}
