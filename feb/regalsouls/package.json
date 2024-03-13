@@ -14,10 +14,12 @@
     "@react-navigation/bottom-tabs": "^6.5.16",
     "@react-navigation/native": "^6.1.14",
     "expo": "~50.0.8",
+    "expo-dev-client": "~3.3.9",
     "expo-status-bar": "~1.11.1",
+    "expo-updates": "~0.24.11",
+    "metro": "^0.80.6",
     "react": "18.2.0",
-    "react-native": "0.73.4",
-    "expo-updates": "~0.24.11"
+    "react-native": "^0.73.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
